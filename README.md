@@ -1,0 +1,3 @@
+# SpynoBurguer
+
+Projeto criado automaticamente 🚀
