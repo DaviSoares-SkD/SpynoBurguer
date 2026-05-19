@@ -1,0 +1,14 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --base:#F3D9B1;
+    --contrast:#A8C256;
+    --cta:#c62128;
+    --accent:#FCD353;
+
+    
+}
