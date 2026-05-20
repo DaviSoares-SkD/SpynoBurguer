@@ -6,9 +6,23 @@
 
 :root{
     --base:#F3D9B1;
+    --gradient:#e9d0aa;
+    --endGrad:#f3d9b1;
+
     --contrast:#A8C256;
     --cta:#c62128;
     --accent:#FCD353;
 
-    
+    --text:#000000;
+    --text-day:#ffffff;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex: 1;
 }
