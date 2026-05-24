@@ -8,12 +8,15 @@
     --base:#F3D9B1;
     --gradient:#e9d0aa;
     --endGrad:#f3d9b1;
+    --header:#f0d1a4;
+    --headerTransparent:#f0d1a4cc;
 
     --contrast:#A8C256;
     --cta:#c62128;
     --accent:#FCD353;
 
     --text:#000000;
+    --text-contrast:#3d322a;
     --text-day:#ffffff;
 }
 
