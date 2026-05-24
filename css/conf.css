@@ -8,9 +8,9 @@
     --base:#F3D9B1;
     --gradient:#e9d0aa;
     --endGrad:#f3d9b1;
-    --header:#f0d1a4;
-    --headerTransparent:#f0d1a4cc;
 
+
+    --bgWithContrast: linear-gradient(135deg,#a7c451,#8fb13d);  
     --contrast:#A8C256;
     --cta:#c62128;
     --accent:#FCD353;

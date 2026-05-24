@@ -1,5 +1,25 @@
 .logo-img{
     width: 200px;
     display: inline-block;
-    margin:0px;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+
+    .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+    }
+
+    .logo-img{
+        width: 170px;
+    }
+
+    .menu{
+        position: absolute;
+        right: 10px;
+    }
 }
