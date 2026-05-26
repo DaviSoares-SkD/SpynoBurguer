@@ -1,101 +1,141 @@
+/* =========================
+   MENU DESKTOP
+========================= */
+
 .menu{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+
     width: 100%;
+
     padding: 10px 20px;
     margin-top: 15px;
+
+    position: relative;
 }
 
+/* Lista do menu */
 .menu ul{
     display: flex;
-    gap: 20px;
     align-items: center;
+    gap: 20px;
+
     margin: 0;
     padding: 0;
 }
 
+/* Remove as bolinhas da lista */
 .menu ul li{
     list-style: none;
 }
 
+/* Links do menu */
 .menu ul li a{
     text-decoration: none;
-    color: var(--text-constrast);
+
+    color: var(--text-contrast);
+
     font-size: 18px;
     font-family: 'Syne', sans-serif;
     font-weight: 600;
-    transition: 0.3s;
+
+    transition: opacity 0.3s ease;
 }
 
+/* Efeito hover */
 .menu ul li a:hover{
     opacity: 0.7;
 }
 
+/* Ícone hamburguer (escondido no desktop) */
 .material-symbols-outlined{
     display: none;
+
     font-size: 32px;
     color: var(--text-contrast);
+
     cursor: pointer;
-}@media (max-width: 768px) {
 
-    .menu{
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        width: 100%;
-        position: relative;
-    }
-
-    .menu ul{
-        display: none;
-    }
-
-   .menu ul.active{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-
-    position: absolute;
-    top: 70px;
-    right: -3px;
-
-    background: var(--contrast);
-
-    padding: 20px;
-    border-radius: 12px;
-    gap: 15px;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-
-    border: 1px solid rgba(255,255,255,0.15);
-
-    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    transition: opacity 0.3s ease;
 }
 
+/* Hover do ícone */
+.material-symbols-outlined:hover{
+    opacity: 0.7;
+}
+
+
+/* =========================
+   MENU MOBILE
+========================= */
+@media (max-width: 768px){
+
+    /* Mostra ícone hamburguer */
     .material-symbols-outlined{
         display: block;
-        font-size: 42px;
-        margin-bottom: 1px;
-        color: var(--text-contrast);
-        cursor: pointer;
     }
-    .menu ul.active::before{
-       content: "";
-     position: absolute;
 
-        top: -10px;
+    /* Menu mobile */
+    .menu ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 15px;
+
+        position: absolute;
+
+        top: 50px;
+        right: -3px;
+
+        padding: 20px;
+
+        background: var(--contrast);
+
+        border-radius: 12px;
+        border: 1px solid rgba(255,255,255,0.15);
+
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+
+        box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+
+        text-align: center;
+
+        z-index: 1000;
+
+        /* Animação suave */
+        opacity: 0;
+        visibility: hidden;
+
+        transform: translateY(-10px);
+
+        transition:
+            opacity 0.4s ease,
+            transform 0.4s ease,
+            visibility 0.4s;
+    }
+
+    /* Menu aberto */
+    .menu ul.active{
+        opacity: 1;
+        visibility: visible;
+
+        transform: translateY(0);
+    }
+
+    /* Setinha do menu */
+    .menu ul::before{
+        content: "";
+
+        position: absolute;
+
+        top: -9px;
         right: 31px;
 
-    width: 0px;
-    height: 1px;
-
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-    border-bottom: 10px solid var(--contrast);
-}
-
-    .material-symbols-outlined:hover{
-        opacity: 0.7;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 10px solid var(--contrast);
     }
 }
