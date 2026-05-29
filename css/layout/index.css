@@ -10,10 +10,31 @@
     font-weight: normal;
     font-family: 'montserrat', sans-serif;
     text-align: center;
-        animation:cascade 1s ease-in-out;
+    animation:cascade 1s ease-in-out;
 
 }
+
+.paragraph{
+    max-width: 600px;
+    line-height: 1.5;
+    padding: 10px;
+    font-size:1rem;
+    font-weight: normal;
+    font-family: 'helvetica', sans-serif;
+    text-align: center;
+    animation:cascade 1s ease-in-out;
+}
+
 .starter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.stars{
+
+    min-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
