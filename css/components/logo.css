@@ -2,6 +2,7 @@
     width: 200px;
     display: inline-block;
     margin: 0;
+    animation: cascade 1s ease;
 }
 
 @media (max-width: 768px) {

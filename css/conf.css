@@ -5,19 +5,17 @@
 }
 
 :root{
-    --base:#F3D9B1;
-    --gradient:#e9d0aa;
-    --endGrad:#f3d9b1;
+
+    --base:#efede3;
 
 
-    --bgWithContrast: linear-gradient(135deg,#a7c451,#8fb13d);  
-    --contrast:#A8C256;
-    --cta:#c62128;
-    --accent:#FCD353;
+    --cta:#B42640;
+    --accent:#FCD150;
 
     --text:#000000;
-    --text-contrast:#3d322a;
+    --text-secondary:#3d322a;
     --text-day:#ffffff;
+
 }
 
 body{

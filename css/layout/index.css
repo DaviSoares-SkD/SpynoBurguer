@@ -1,0 +1,22 @@
+.title{
+    font-size:2rem;
+    font-weight: bold;
+    font-family: 'syne', sans-serif;
+    text-align: center;
+    animation:cascade 1s ease-in-out;
+}
+.subtitle{
+    font-size:1.5rem;
+    font-weight: normal;
+    font-family: 'montserrat', sans-serif;
+    text-align: center;
+        animation:cascade 1s ease-in-out;
+
+}
+.starter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}

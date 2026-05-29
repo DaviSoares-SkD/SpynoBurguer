@@ -1,12 +1,13 @@
 .footer{
     display: flex;
     min-width:100%;
-    background:var(--bgWithContrast);
+    background:var(--base);
     padding: 10px;
     margin: 0px ;
-    color: var(--text-day);
+    color: var(--text-secondary);
     font-weight: 500;
     font-size: 1.2rem;
+    font-family: 'Syne', sans-serif;
     justify-content: center;
     align-items: center;
 }
