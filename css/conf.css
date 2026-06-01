@@ -13,13 +13,15 @@
     --accent:#FCD150;
 
     --text:#000000;
-    --text-secondary:#3d322a;
+    --text-additional:#3d322a;
     --text-day:#ffffff;
 
 }
 
 body{
     width: 100%;
+    margin: 0px;
+    padding: 0px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;

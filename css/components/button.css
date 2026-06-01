@@ -3,17 +3,22 @@
     color: var(--text-day);
     border:none;
     padding:10px;
+    font-size:1.2rem;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    font-weight: 600;
+    font-family: 'syne', sans-serif;
     margin-top:20px;
     border-radius:10px;
-    animation: slideIn 1s ease-in-out;
+    animation: cascade 1s ease-in;
     transition:
-        background-color .3s ease-in-out,
-        color .3s ease-in-out,
-        transform .3s ease-in-out;
+        background-color .3s ease-in,
+        color .3s ease-in,
+        transform .3s ease-in;
 }
 
 .callToAction:hover{
     background-color: var(--accent);
     color:var(--text);
-    animation:pulse 1s infinite;
+    transform:scale(1.05);
 }

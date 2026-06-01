@@ -1,43 +1,85 @@
 .title{
-    font-size:2rem;
+    font-family: 'Syne', sans-serif;
     font-weight: bold;
-    font-family: 'syne', sans-serif;
     text-align: center;
-    animation:cascade 1s ease-in-out;
+    animation: cascade 1s ease-in-out;
 }
-.subtitle{
-    font-size:1.5rem;
-    font-weight: normal;
-    font-family: 'montserrat', sans-serif;
-    text-align: center;
-    animation:cascade 1s ease-in-out;
 
+.subtitle{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    animation: cascade 1s ease-in-out;
 }
 
 .paragraph{
     max-width: 600px;
-    line-height: 1.5;
     padding: 10px;
-    font-size:1rem;
-    font-weight: normal;
-    font-family: 'helvetica', sans-serif;
+    line-height: 1.5;
+
+    font-family: Helvetica, sans-serif;
+    font-size: 1rem;
     text-align: center;
-    animation:cascade 1s ease-in-out;
+
+    animation: cascade 1s ease-in-out;
 }
+
+/* HERO */
 
 .starter{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-}
-.stars{
-
+    position: relative;
+    overflow: hidden;
     min-width: 100%;
+    padding-top:40px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    min-height: 86.5vh;
+}
+
+.starter::before{
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background-image:     
+      linear-gradient(
+            rgba(0,0,0,.35),
+            rgba(0,0,0,.35)
+        ),url('../../images/burguer-bg.jpg');
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(8px) ;
+    transform: scale(1.1);
+
+    z-index: -1;
+}
+/* CTA */
+
+#titleCta{
+
+    font-size: 4rem;
+    color:var(--accent);
+}
+
+#subtitleCta{
+    font-size: 2em;
+        color:var(--accent);
+}
+
+/* STARS */
+
+.stars{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     padding: 20px;
 }
