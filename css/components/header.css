@@ -1,6 +1,9 @@
-.header{
-    display:flex;
-    min-width:100%;
-    background: var(--base);
-    padding: 10px;    
+/* Header da página */
+.header {
+    display: flex;        /* ativa flexbox */
+    min-width: 100%;      /* tenta ocupar toda largura */
+
+    background: var(--base); /* fundo do header */
+
+    padding: 10px;        /* espaço interno */
 }

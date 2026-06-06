@@ -1,25 +1,32 @@
-.logo-img{
-    width: 200px;
-    display: inline-block;
+
+/* Logo do site */
+.logo-img {
+    width: 200px;              /* tamanho padrão da logo */
+    display: inline-block;     /* comportamento inline com controle de bloco */
     margin: 0;
-    animation: cascade 1s ease;
+
+    animation: cascade 1s ease; /* entrada suave */
 }
 
+/* Responsividade para tablets e celulares */
 @media (max-width: 768px) {
 
-    .header{
+    /* Ajusta header no mobile */
+    .header {
         display: flex;
-        justify-content: center;
+        justify-content: center; /* centraliza conteúdo */
         align-items: center;
 
-        position: relative;
+        position: relative; /* necessário pro menu absoluto funcionar */
     }
 
-    .logo-img{
+    /* Logo menor no mobile */
+    .logo-img {
         width: 170px;
     }
 
-    .menu{
+    /* Menu posicionado no canto direito */
+    .menu {
         position: absolute;
         right: 10px;
     }

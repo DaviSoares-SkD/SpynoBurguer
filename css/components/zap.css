@@ -1,23 +1,30 @@
-.whatsapp-btn{
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
 
-    padding: 12px 20px;
+/* Botão do WhatsApp */
+.whatsapp-btn {
+    display: inline-flex; /* coloca ícone + texto lado a lado */
+    align-items: center;  /* centraliza verticalmente */
+    gap: 8px;             /* espaço entre ícone e texto */
 
-    background-color: #25D366;
+    padding: 6px 10px;
+
+    background-color: #25D366; /* verde oficial WhatsApp */
     color: white;
 
     text-decoration: none;
-    border-radius: 12px;
 
-    transition: transform .3s ease;
+    border-radius: 100%; /* deixa totalmente circular */
+
+    transition: transform .3s ease; /* animação suave no hover */
 }
 
-.whatsapp-btn:hover{
-    transform: scale(1.05);
+/* Hover do botão */
+.whatsapp-btn:hover {
+    transform: scale(1.1); /* aumenta levemente */
+
+    box-shadow: 0px 0px 8px #25D366; /* glow verde */
 }
 
-.bi-whatsapp{
-    font-size: 1.3rem;
+/* Ícone do WhatsApp */
+.bi-whatsapp {
+    font-size: 1.2rem;
 }

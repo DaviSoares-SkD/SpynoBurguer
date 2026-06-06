@@ -1,24 +1,27 @@
-.callToAction{
-    background-color: var(--cta);
-    color: var(--text-day);
-    border:none;
-    padding:10px;
-    font-size:1.2rem;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    font-weight: 600;
-    font-family: 'syne', sans-serif;
-    margin-top:20px;
-    border-radius:10px;
-    animation: cascade 1s ease-in;
-    transition:
-        background-color .3s ease-in,
-        color .3s ease-in,
-        transform .3s ease-in;
+/* Botão de chamada pra ação (CTA) */
+.callToAction {
+    padding: 7px 15px; /* espaço interno do botão */
+    margin-top: 20px;  /* separação do elemento acima */
+
+    font-size: 1.2em; /* tamanho do texto */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+
+    color: var(--text-day);        /* cor do texto (branco) */
+    background-color: var(--cta);  /* cor principal do botão */
+
+    border: none;
+    border-radius: 30px; /* deixa o botão bem arredondado (pill button) */
+
+    animation: cascade 1s ease-in-out; /* entra com animação suave */
+
+    cursor: pointer; /* muda o mouse pra indicar clique */
+
+    transition: .3s ease-in-out; /* suaviza hover e mudanças de estilo */
 }
 
-.callToAction:hover{
-    background-color: var(--accent);
-    color:var(--text);
-    transform:scale(1.05);
+/* Estado ao passar o mouse */
+.callToAction:hover {
+    background-color: var(--accent); /* muda cor do fundo */
+    color: var(--text);              /* muda cor do texto */
 }

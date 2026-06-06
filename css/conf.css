@@ -1,31 +1,36 @@
-*{
+/* Reset geral: remove espaçamentos padrão do navegador e padroniza o modelo de caixa */
+* {
     padding: 0px;
     margin: 0px;
-    box-sizing: border-box;
+    box-sizing: border-box; /* facilita layout: padding não aumenta o tamanho do elemento */
 }
 
-:root{
+/* Variáveis globais de cor (design system simples) */
+:root {
+    --base: #efede3;          /* cor de fundo base */
+    --shadows: #000000a6;     /* sombra semi-transparente */
 
-    --base:#efede3;
+    --cta: #B42640;           /* cor de destaque (botões/ações principais) */
+    --accent: #FCD150;        /* cor de destaque secundário */
 
-
-    --cta:#B42640;
-    --accent:#FCD150;
-
-    --text:#000000;
-    --text-additional:#3d322a;
-    --text-day:#ffffff;
-
+    --text: #000000;          /* texto principal */
+    --text-additional: #3d322a; /* texto secundário */
+    --text-day: #ffffff;      /* texto sobre fundos escuros */
 }
 
-body{
+/* Estrutura base da página */
+body {
     width: 100%;
     margin: 0px;
     padding: 0px;
-    min-height: 100vh;
+
+    min-height: 100vh; /* garante que ocupa pelo menos a altura da tela */
+
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* organiza conteúdo em coluna */
 }
-main{
-    flex: 1;
+
+/* Faz o conteúdo principal ocupar o espaço restante */
+main {
+    flex: 1; /* empurra footer pra baixo e ocupa espaço disponível */
 }

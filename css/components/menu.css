@@ -1,10 +1,11 @@
+
 /* =========================
    MENU DESKTOP
 ========================= */
 
-.menu{
+.menu {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end; /* joga o menu pro lado direito */
     align-items: center;
 
     width: 100%;
@@ -12,26 +13,26 @@
     padding: 10px 20px;
     margin-top: 15px;
 
-    position: relative;
+    position: relative; /* base pro dropdown mobile */
 }
 
-/* Lista do menu */
-.menu ul{
+/* UL do menu */
+.menu ul {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 20px; /* espaçamento entre links */
 
     margin: 0;
     padding: 0;
 }
 
-/* Remove as bolinhas da lista */
-.menu ul li{
+/* Remove bullets da lista */
+.menu ul li {
     list-style: none;
 }
 
-/* Links do menu */
-.menu ul li a{
+/* Links */
+.menu ul li a {
     text-decoration: none;
 
     color: var(--text-additional);
@@ -39,17 +40,18 @@
     font-size: 18px;
     font-family: 'Syne', sans-serif;
     font-weight: 600;
+
     animation: fadeIn 0.5s ease;
     transition: opacity 0.3s ease;
 }
 
-/* Efeito hover */
-.menu ul li a:hover{
+/* Hover simples (leve e clean) */
+.menu ul li a:hover {
     opacity: 0.7;
 }
 
-/* Ícone hamburguer (escondido no desktop) */
-.material-symbols-outlined{
+/* Ícone hamburguer (desktop escondido) */
+.material-symbols-outlined {
     display: none;
 
     font-size: 32px;
@@ -60,34 +62,38 @@
     transition: opacity 0.3s ease;
 }
 
-/* Hover do ícone */
-.material-symbols-outlined:hover{
+.material-symbols-outlined:hover {
     opacity: 0.7;
 }
-
 
 /* =========================
    MENU MOBILE
 ========================= */
-@media (max-width: 768px){
 
-    /* Mostra ícone hamburguer */
-    .material-symbols-outlined{
+@media (max-width: 768px) {
+
+    /* mostra hamburguer */
+    .material-symbols-outlined {
         display: block;
     }
 
-    .menu ul li a{
+    /* links mobile */
+    .menu ul li a {
         font-size: 1.3rem;
         font-weight: 700;
         color: var(--text);
+
         font-family: 'Syne', sans-serif;
-        text-align: flex-start;
+
+        text-align: flex-start; /* ⚠️ isso aqui não existe */
     }
-    /* Menu mobile */
-    .menu ul{
+
+    /* dropdown */
+    .menu ul {
         display: flex;
         flex-direction: column;
-        align-items: left;
+
+        align-items: left; /* ⚠️ isso também é inválido */
 
         gap: 15px;
 
@@ -95,32 +101,32 @@
 
         padding: 15px 20px;
         border-radius: 8px;
+
         top: 50px;
         right: -15px;
+
         background-color: var(--base);
 
-        /* Animação suave */
         opacity: 0;
         visibility: hidden;
 
         transform: translateY(-10px);
 
-        transition:
-            opacity 0.4s ease,
-            transform 0.4s ease,
-            visibility 0.4s;
+        transition: opacity 0.4s ease,
+                    transform 0.4s ease,
+                    visibility 0.4s;
     }
 
-    /* Menu aberto */
-    .menu ul.active{
+    /* menu aberto */
+    .menu ul.active {
         opacity: 1;
         visibility: visible;
 
         transform: translateY(0);
     }
 
-    /* Setinha do menu */
-    .menu ul::before{
+    /* setinha do dropdown */
+    .menu ul::before {
         content: "";
 
         position: absolute;

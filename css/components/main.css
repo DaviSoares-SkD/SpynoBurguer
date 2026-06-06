@@ -1,9 +1,12 @@
-.main{
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
+/* Container principal da página */
+.main {
+    display: flex;              /* ativa flexbox */
+    width: 100%;                /* ocupa toda largura */
+    height: 100vh;              /* ocupa toda altura da tela */
+
+    flex-direction: column;     /* organiza itens em coluna */
+
+    align-items: center;        /* centraliza horizontalmente */
+    justify-content: center;    /* centraliza verticalmente */
+}

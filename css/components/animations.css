@@ -1,3 +1,4 @@
+/* Faz o elemento aparecer gradualmente (de transparente para visível) */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -6,6 +7,8 @@
         opacity: 1;
     }
 }
+
+/* Faz o elemento desaparecer gradualmente (de visível para transparente) */
 @keyframes fadeout {
     from {
         opacity: 1;
@@ -14,36 +17,40 @@
         opacity: 0;
     }
 }
+
+/* Animação de “entrada suave” com leve subida */
 @keyframes cascade {
     from {
         opacity: 0;
-        transform: translateY(-10px);
+        transform: translateY(-10px); /* começa um pouco acima */
     }
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0); /* volta pra posição normal */
     }
-    
 }
 
-@keyframes pulse{
-    0%{
-        transform:scale(1)
+/* Efeito de pulsação (cresce e volta ao normal) */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
     }
-    50%{
-        transform:scale(1.08)
+    50% {
+        transform: scale(1.08); /* aumenta levemente */
     }
-    100%{
-        transform:scale(1)      
+    100% {
+        transform: scale(1); /* volta ao tamanho original */
+    }
 }
-}
+
+/* Entrada vindo da esquerda para o centro */
 @keyframes slideIn {
     from {
-        transform: translateX(-100%);
+        transform: translateX(-100%); /* começa fora da tela à esquerda */
         opacity: 0;
     }
     to {
-        transform: translateX(0);
+        transform: translateX(0); /* posição final */
         opacity: 1;
     }
 }

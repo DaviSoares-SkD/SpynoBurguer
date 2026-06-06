@@ -1,21 +1,25 @@
-.title{
+
+/* Título principal */
+.title {
     font-family: 'Syne', sans-serif;
     font-weight: bold;
     text-align: center;
-    animation: cascade 1s ease-in-out;
+    animation: cascade 1s ease-in-out; /* entrada suave */
 }
 
-.subtitle{
+/* Subtítulo */
+.subtitle {
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     text-align: center;
     animation: cascade 1s ease-in-out;
 }
 
-.paragraph{
-    max-width: 600px;
+/* Parágrafo padrão */
+.paragraph {
+    max-width: 600px; /* evita linha muito longa (boa prática UX) */
     padding: 10px;
-    line-height: 1.5;
+    line-height: 1.5; /* melhora leitura */
 
     font-family: Helvetica, sans-serif;
     font-size: 1rem;
@@ -24,56 +28,73 @@
     animation: cascade 1s ease-in-out;
 }
 
-/* HERO */
+/* ===== HERO SECTION ===== */
 
-.starter{
+.starter {
     position: relative;
     overflow: hidden;
+
     min-width: 100%;
-    padding-top:40px;
+    padding-top: 40px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    min-height: 86.5vh;
+    min-height: 87.3vh; /* quase tela cheia */
 }
 
-.starter::before{
+/* Fundo do hero com imagem + overlay + blur */
+.starter::before {
     content: "";
 
     position: absolute;
     inset: 0;
 
+    /* camada escura + imagem */
     background-image:     
       linear-gradient(
             rgba(0,0,0,.35),
             rgba(0,0,0,.35)
-        ),url('../../images/burguer-bg.jpg');
+        ),
+        url('../../images/burguer-bg.jpg');
+
     background-size: cover;
     background-position: center;
 
-    filter: blur(8px) ;
-    transform: scale(1.1);
+    filter: blur(8px); /* efeito cinematográfico */
+    transform: scale(1.1); /* evita bordas aparecendo no blur */
 
-    z-index: -1;
-}
-/* CTA */
-
-#titleCta{
-
-    font-size: 4rem;
-    color:var(--accent);
+    z-index: -1; /* joga para trás do conteúdo */
 }
 
-#subtitleCta{
+/* ===== CTA HERO TITLE ===== */
+
+#titleCta {
+    font-size: 3.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+
+    text-shadow: 0px 1px 1px var(--shadows);
+
+    color: var(--accent);
+}
+
+/* Subtítulo do CTA */
+#subtitleCta {
+    font-weight: 500;
+    font-family: 'Syne', sans-serif;
     font-size: 2em;
-        color:var(--accent);
+
+    text-shadow: 0px 1px 2px var(--shadows);
+
+    color: var(--text-day);
 }
 
-/* STARS */
+/* ===== STARS SECTION ===== */
 
-.stars{
+.stars {
     width: 100%;
 
     display: flex;
@@ -81,5 +102,17 @@
     align-items: center;
     justify-content: center;
 
+    margin-top: 10%;
     padding: 20px;
+}
+
+/* Subtítulo específico da seção stars */
+.subtitle#subtitleStars {
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+
+    text-shadow: 0px 1px 1px var(--shadows);
+
+    color: var(--cta);
 }
