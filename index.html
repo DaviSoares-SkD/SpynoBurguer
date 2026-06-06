@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- SEO básico com palavras-chave -->
     <meta name="keywords" content="Hamburgueria, Burger, Spyno Burger, Hambúrguer Artesanal, Delivery de Hambúrguer, Fast Food, Smash Burger, Lanches, Cardápio Online, Hamburgueria Gourmet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Spyno Burguer</title>
+
+    <!-- Fontes externas do Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Ícones do Google -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+
+    <!-- Bootstrap (CSS + ícones) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS modular do projeto -->
     <link rel="stylesheet" href="css/conf.css">
     <link rel="stylesheet" href="css/components/bg.css">
     <link rel="stylesheet" href="css/components/animations.css">
@@ -23,73 +36,132 @@
     <link rel="stylesheet" href="css/components/menu.css">
     <link rel="stylesheet" href="css/components/button.css">
     <link rel="stylesheet" href="css/components/zap.css">
-
 </head>
+
 <body class="bg">
+
+    <!-- ================= HEADER ================= -->
     <header class="header">
+
+        <!-- Logo responsiva (troca imagem no mobile) -->
         <picture>
             <source media="(max-width: 768px)" srcset="images/logo-mob.png">
-            <img src="images/logo.png" alt="Hamburguer com olinhos e o nome Spyno  Burguer"
-                class="logo-img">
+            <img src="images/logo.png" alt="Hamburguer com olinhos e o nome Spyno Burguer" class="logo-img">
         </picture>
-        <nav class="menu">
-         <span class="material-symbols-outlined" id="menu-btn">
-            menu
-         </span>
 
+        <!-- Menu de navegação -->
+        <nav class="menu">
+
+            <!-- Ícone do menu mobile -->
+            <span class="material-symbols-outlined" id="menu-btn">
+                menu
+            </span>
+
+            <!-- Lista de navegação -->
             <ul id="menu-list">
+
                 <li><a href="#home">Home</a></li>
                 <li><a href="#menu">Cardápio</a></li>
                 <li><a href="#order">Sobre nós</a></li>
-               <a href="https://wa.me/5511999999999" target="_blank" class="whatsapp-btn">
-                 <i class="bi bi-whatsapp"></i>
-                </a>
+
+                <!-- BOTÃO WHATSAPP (corrigido dentro de LI) -->
+                <li>
+                    <a href="https://wa.me/5511999999999" target="_blank" class="whatsapp-btn">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                </li>
+
             </ul>
         </nav>
     </header>
-    <main class="main">
-        <section class="starter">
-            <h1 class="title" id="titleCta"> O sabor que prende na <br>primeira mordida!!</h1>
-            <h2 class="subtitle" id="subtitleCta"> Escolha agora: qual Spyno vai ganhar você hoje?&#x1F354; &#x1F525;
-            </h2>
-            <button class="callToAction">Fazer meu pedido&#x1F35F;</button>
-        </section>
-        <section class="stars">
-            <div class="container">
-            <h2 class="subtitle" id="subtitleStars">Peça as Estrelas do sabor!&#x1F354; &#x1F525;</h2>
 
-             <div class="card">
-                <figure class="card-img">
+    <!-- ================= MAIN ================= -->
+    <main class="main">
+
+        <!-- HERO SECTION -->
+        <section class="starter">
+
+            <h1 class="title" id="titleCta">
+                O sabor que prende na <br>primeira mordida!!
+            </h1>
+
+            <h2 class="subtitle" id="subtitleCta">
+                Escolha agora: qual Spyno vai ganhar você hoje? 🍔🔥
+            </h2>
+
+            <button class="callToAction">
+                Fazer meu pedido 🍟
+            </button>
+
+        </section>
+
+        <!-- CARDÁPIO / DESTAQUES -->
+        <section class="stars">
+
+            <div class="container">
+
+                <h2 class="subtitle" id="subtitleStars">
+                    Peça as Estrelas do sabor! 🍔🔥
+                </h2>
+
+                <div class="card">
+
+                    <figure class="card-img">
                         <img src="#" alt="imagem do item do cardápio">
-                </figure>
-                <h3 class="card-title">Spymash</h3>
-                <p class="card-description">Um Lanche delicioso e cheio de sabor. <br>
-                    Pão de brioche, hambúrguer smash, queijo cheddar, cebola caramelizada, alface americana e maionese especial da casa.
-                </p>
-             </div> 
-                
+                    </figure>
+
+                    <h3 class="card-title">Spymash</h3>
+
+                    <p class="card-description">
+                        Um Lanche delicioso e cheio de sabor. <br>
+                        Pão de brioche, hambúrguer smash, queijo cheddar, cebola caramelizada, alface americana e maionese especial da casa.
+                    </p>
+
+                </div>
+
             </div>
         </section>
+
+        <!-- SOBRE -->
         <section class="about-us">
+
             <h2 class="subtitle" id="subtitleAbout">Sobre nós</h2>
-            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aperiam quas mollitia et placeat officiis eius dicta neque aut dolore, numquam sit nihil sint modi recusandae qui soluta harum error!
+
+            <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aperiam quas mollitia et placeat officiis eius dicta neque aut dolore, numquam sit nihil sint modi recusandae qui soluta harum error!
             </p>
-            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, labore!</p>
+
+            <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, labore!
+            </p>
+
             <img src="#" alt="imagem">
-            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nemo hic reprehenderit ipsa, eaque iste veniam illum autem maiores beatae, doloribus vero dicta tenetur placeat distinctio esse commodi inventore quas.</p>
+
+            <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nemo hic reprehenderit ipsa, eaque iste veniam illum autem maiores beatae, doloribus vero dicta tenetur placeat distinctio esse commodi inventore quas.
+            </p>
+
             <div class="ico-qualitys">
                 <figure></figure>
                 <figure></figure>
                 <figure></figure>
             </div>
+
         </section>
 
     </main>
+
+    <!-- ================= FOOTER ================= -->
     <footer class="footer">
-        <p>Spyno Burguer&trade; . Todos os direitos reservados &copy; 2026</p>
+        <p>Spyno Burguer™ . Todos os direitos reservados © 2026</p>
     </footer>
-   <script src="js/menu.js"></script>
-   <script src="js/.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS -->
+    <script src="js/menu.js"></script>
+    <script src="js/load.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
