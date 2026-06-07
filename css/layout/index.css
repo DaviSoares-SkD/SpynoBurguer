@@ -117,3 +117,45 @@
     color: var(--cta);
 }
 
+
+
+.about-us{
+    width: 100%;
+    padding: 20px;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#subtitleAbout {
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+
+    text-shadow: 0px 1px 1px var(--shadows);
+
+    color: var(--cta);
+}
+.paragraph {
+    max-width: 600px; /* evita linha muito longa (boa prática UX) */
+    padding: 10px;
+    line-height: 1.5; /* melhora leitura */
+
+    font-family: Helvetica, sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8); /* leve fundo para destacar o texto */
+    border-radius: 8px; /* cantos arredondados para suavizar */ 
+
+    animation: cascade 1s ease-in-out;
+}
+
+.about-us img {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+    border-radius: 8px; /* cantos arredondados para suavizar */
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2); /* leve sombra para destacar a imagem */
+}
