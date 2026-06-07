@@ -1,3 +1,60 @@
-.card{
-    border:none;
+
+/* ===== CARD PRINCIPAL ===== */
+.card {
+    border: none;
+
+    max-width: 290px;
+
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 8%;
+
+    /* efeito vidro */
+    background: rgba(104, 104, 104, 0.116);
+    backdrop-filter: blur(10px);
+
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column; /* organiza conteúdo verticalmente */
+    transition: transform 0.3s ease;
+
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+
+    color: var(--cta);
+    margin-top: 10px;
+    
+}
+
+.card-description {
+    font-size: 1rem;
+    font-family: 'Syne', sans-serif;
+    font-weight: 400;
+
+    color: var(--text);
+    margin-top: 5px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* ===== IMAGEM DO CARD ===== */
+.card-img img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+.cards-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* quebra linha quando não cabe */
+    justify-content: center;
+    align-items: flex-start stretch;
 }

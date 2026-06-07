@@ -3,6 +3,7 @@
 .whatsapp-btn {
     display: inline-flex; /* coloca ícone + texto lado a lado */
     align-items: center;  /* centraliza verticalmente */
+    justify-content: center;
     gap: 8px;             /* espaço entre ícone e texto */
 
     padding: 6px 10px;
