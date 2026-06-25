@@ -1,0 +1,28 @@
+#title-menu{
+    margin-top: 20px;
+    margin-left: 2%;
+    color:var(--text-additional);
+}
+#subtitle-menu{
+    margin-top: 3%;
+    padding-left: 5%;
+    text-align: left;
+    font-size: 3rem;
+    font-weight:700;
+    font-family:'Syne', monospace ;
+    color:var(--cta);
+}
+
+.menu-section {
+    display: flex;
+    min-width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* Altera o alinhamento para o início e centraliza o bloco verticalmente */
+    justify-content: center; 
+    align-items: flex-start;
+    /* Controla o espaço exato entre o título e a lista */
+    gap: 14px; 
+}
+
+

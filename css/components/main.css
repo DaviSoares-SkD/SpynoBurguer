@@ -8,5 +8,5 @@
     flex-direction: column;     /* organiza itens em coluna */
 
     align-items: center;        /* centraliza horizontalmente */
-    justify-content: center;    /* centraliza verticalmente */
+    justify-content: flex-start;    /* centraliza verticalmente */
 }

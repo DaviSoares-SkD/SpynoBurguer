@@ -1,0 +1,29 @@
+
+/* Título principal */
+.title {
+    font-family: 'Syne', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    animation: cascade 1s ease-in-out; /* entrada suave */
+}
+
+/* Subtítulo */
+.subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    animation: cascade 1s ease-in-out;
+}
+
+/* Parágrafo padrão */
+.paragraph {
+    max-width: 600px; /* evita linha muito longa (boa prática UX) */
+    padding: 10px;
+    line-height: 1.5; /* melhora leitura */
+
+    font-family: Helvetica, sans-serif;
+    font-size: 1rem;
+    text-align: center;
+
+    animation: cascade 1s ease-in-out;
+}
