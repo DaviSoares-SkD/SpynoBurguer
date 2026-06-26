@@ -1,0 +1,21 @@
+#title-about-us{
+    margin-left: 2%;
+    margin-top: 1.5%;
+    white-space: nowrap;
+    color: var(--text-additional);
+}
+
+#subtitleABS{
+    color: var(--cta);
+    font-weight: 500;
+    padding: 15px;
+    margin-top: 2%;
+    font-size: 2.5rem;
+}
+
+
+.imgABS{
+    display: block;
+    width: 500px;
+    padding: 20px;
+}
