@@ -14,7 +14,6 @@
     backdrop-filter: blur(10px);
 
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    flex:auto;
     display: flex;
     flex-direction: column; /* organiza conteúdo verticalmente */
     transition: transform 0.3s ease;
@@ -64,5 +63,17 @@
     gap: 10px;
     flex-wrap: wrap; /* quebra linha quando não cabe */
     justify-content: center;
-    align-items: flex-start stretch;
+    align-items:  stretch;
+}
+
+
+/* price */
+
+.price {
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--cta);
+    margin-top: auto;
+    text-align: right;
 }

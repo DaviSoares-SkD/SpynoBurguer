@@ -54,3 +54,21 @@
         opacity: 1;
     }
 }
+
+
+
+.fade-in.show {
+  animation: fadeIn 0.6s ease forwards;
+}
+
+.fade-out.show {
+  animation: fadeout 0.6s ease forwards;
+}
+
+.cascade.show {
+  animation: cascade 0.6s ease forwards;
+}
+
+.slide-in.show {
+  animation: slideIn 0.6s ease forwards;
+}
