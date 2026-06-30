@@ -1,5 +1,6 @@
 #title-menu{
     margin-top: 20px;
+    animation: slideIn 1s ease-in-out;
     margin-left: 2%;
     color:var(--text-additional);
 }
@@ -26,3 +27,8 @@
 }
 
 
+@media (max-width: 768px) {
+    #title-menu{
+        font-size: 2.2rem ;
+    }
+}
