@@ -17,6 +17,7 @@
     display: flex;
     flex-direction: column; /* organiza conteúdo verticalmente */
     transition: transform 0.3s ease;
+    animation: cascade .5s ease-in-out;
 
 }
 
