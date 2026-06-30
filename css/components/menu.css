@@ -9,7 +9,7 @@
     align-items: center;
 
     width: 100%;
-
+    
     padding: 10px 20px;
     margin-top: 15px;
 
@@ -55,7 +55,7 @@
     display: none;
 
     font-size: 32px;
-    color: var(--text-day);
+    color: var(--text-additional);
 
     cursor: pointer;
 
@@ -64,6 +64,10 @@
 
 .material-symbols-outlined:hover {
     opacity: 0.7;
+}
+
+#zapContainer{
+    padding-left: 20px;
 }
 
 /* =========================
@@ -81,7 +85,7 @@
     .menu ul li a {
         font-size: 1.3rem;
         font-weight: 700;
-        color: var(--text);
+        color: var(--text-additional);
 
         font-family: 'Syne', sans-serif;
 
@@ -94,7 +98,7 @@
         flex-direction: column;
 
         align-items: left; /* ⚠️ isso também é inválido */
-
+        z-index: 1;
         gap: 15px;
 
         position: absolute;
@@ -102,8 +106,8 @@
         padding: 15px 20px;
         border-radius: 8px;
 
-        top: 50px;
-        right: -15px;
+        top: 72px;
+        right: -20px;
 
         background-color: var(--base);
 
@@ -138,4 +142,9 @@
         border-right: 8px solid transparent;
         border-bottom: 10px solid var(--base);
     }
+    #zapContainer{
+    padding-left: 20px;
+    margin-right: -20px;
+}
+
 }

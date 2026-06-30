@@ -6,7 +6,7 @@
     justify-content: center;
     gap: 8px;             /* espaço entre ícone e texto */
 
-    padding: 6px 10px;
+    padding: 4px 10px;
 
     background-color: #25D366; /* verde oficial WhatsApp */
     color: white;
@@ -28,4 +28,10 @@
 /* Ícone do WhatsApp */
 .bi-whatsapp {
     font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .bi-whatsapp{
+        font-size: 1.8rem;
+    }
 }

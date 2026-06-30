@@ -78,3 +78,13 @@
     margin-top: auto;
     text-align: right;
 }
+
+@media (max-width: 768px) {
+    .card-menu{
+    max-width: 270px;
+    margin-left: -20px;
+    gap: 10px;
+    margin-bottom: 2%;
+}
+    
+}
