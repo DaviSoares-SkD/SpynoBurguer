@@ -1,0 +1,208 @@
+.cart-section{
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.cart-title{
+    font-family: 'Poppins', sans-serif;
+    color: var(--cta);
+    margin-bottom: 30px;
+}
+
+.cart-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-wrap: wrap;
+
+    padding: 25px 20px;
+    margin-bottom: 18px;
+
+    border-radius: 15px;
+
+    background: rgba(104,104,104,.12);
+    backdrop-filter: blur(10px);
+
+    box-shadow: 0 4px 15px rgba(0,0,0,.15);
+}
+
+.item-info h3{
+    color: var(--cta);
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 5px;
+}
+
+.item-info p{
+    color: var(--text);
+    margin: 0;
+}
+
+.item-actions{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.qtd{
+    min-width: 22px;
+    text-align: center;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    color: var(--text-additional);
+}
+
+.btn-plus,
+.btn-minus{
+
+    width: 35px;
+    height: 35px;
+
+    border: none;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    background: var(--cta);
+    color: var(--text-day);
+
+    transition: .25s;
+}
+
+.btn-plus:hover,
+.btn-minus:hover{
+
+    transform: scale(1.08);
+    color: var(--text);
+    background-color: var(--accent);
+    opacity: .9;
+}
+
+.btn-delete{
+
+    width: 38px;
+    height: 38px;
+
+    border: none;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    background: var(--cta);
+
+    color: var(--text-day);
+
+    transition: .25s;
+}
+
+.btn-delete:hover{
+
+    transform: scale(1.08);
+    color: var(--text);
+    background-color: var(--accent);
+    opacity: .9;
+}
+.cart-footer{
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#total{
+    color: var(--cta);
+    font-family: 'Poppins', sans-serif;
+}
+
+.finish-btn{
+    border: none;
+    border-radius: 12px;
+
+    padding: 12px 25px;
+    margin-left: 15px;
+    cursor: pointer;
+
+    background: var(--cta);
+    color: white;
+
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+.finish-btn:hover{
+    transform: scale(1.05);
+}
+
+
+/* ===============================
+   RESPONSIVO (MOBILE)
+=============================== */
+
+@media (max-width: 768px) {
+
+    .cart-section{
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    .cart-title{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .item{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 18px;
+    }
+
+    .item-actions{
+        width: 100%;
+        justify-content: space-between;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .btn-plus,
+    .btn-minus{
+        width: 32px;
+        height: 32px;
+        font-size: 18px;
+    }
+
+    .btn-delete{
+        width: 36px;
+        height: 36px;
+    }
+
+    .cart-footer{
+        flex-direction: column;
+        gap: 15px;
+        align-items: stretch;
+    }
+
+    #total{
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .finish-btn{
+        width: 100%;
+        margin-left: 0;
+        padding: 14px;
+        font-size: 16px;
+    }
+}

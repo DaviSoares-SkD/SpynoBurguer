@@ -69,6 +69,10 @@
 #zapContainer{
     padding-left: 20px;
 }
+#carrinho{
+    padding-left: 20px;
+    font-size: 1.6rem;
+}
 
 /* =========================
    MENU MOBILE
@@ -146,5 +150,8 @@
     padding-left: 20px;
     margin-right: -20px;
 }
+    #carrinho{
+        margin-left: 0px;
+    }
 
 }

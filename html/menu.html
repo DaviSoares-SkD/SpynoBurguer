@@ -14,6 +14,7 @@
 
     <!-- Ícones do Google -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=shopping_cart" />
 
     <!-- Bootstrap (CSS + ícones) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -30,6 +31,7 @@
     <link rel="stylesheet" href="../css/components/bg.css">
     <link rel="stylesheet" href="../css/components/animations.css">
     <link rel="stylesheet" href="../css/components/text.css">
+    <link rel="stylesheet" href="../css/components/bntCar.css">
 </head>
 
 </head>
@@ -53,11 +55,13 @@
                 <li><a href="../../SpynoBurguer/index.html">Home</a></li>
                 <li><a href="../../SpynoBurguer/html/menu.html">Cardápio</a></li>
                 <li><a href="../../SpynoBurguer/html/aboutUs.html">Sobre nós</a></li>
-            </ul>
-            <span id="zapContainer">
-                <a href="https://wa.me/5511999999999" target="_blank" class="whatsapp-btn">
+                <li><a href="https://wa.me/5511999999999" target="_blank" class="whatsapp-btn">
                     <i class="bi bi-whatsapp"></i>
-                </a>
+                </a></li>  
+            </ul>
+          
+             <span id="carrinho">
+                <a href="/html/carrinho.html">&#x1F6D2;</a>
             </span>
         </nav>
     </header>
@@ -77,6 +81,7 @@
                             Pão de brioche, hambúrguer smash, queijo cheddar, cebola caramelizada, alface americana e maionese especial da casa.
                         </p>
                         <span class="price">R$ 13,65</span>
+                        <button class="addcar" onclick="addcar('SpyMash', 13.65)">+</button>
                     </div>
                     <div class="card card-menu">
                         <figure class="card-img">
@@ -88,6 +93,8 @@
                             Pão de brioche, hambúrguer suculento, queijo cheddar, crocantes fatias de bacon, alface fresca e maionese defumada da casa.
                         </p>
                         <span class="price">R$ 28,93</span>
+                        <button class="addcar" onclick="addcar('SpyBacon', 28.93)">+</button>
+
                     </div>
                     <div class="card card-menu">
                         <figure class="card-img" >
@@ -99,6 +106,8 @@
                             Pão de brioche, hambúrguer suculento e gourmet, queijo cheddar da melhor qualidade, alface fresca e maionese verde da casa.
                         </p>
                         <span class="price">R$ 19,90</span>
+                         <button class="addcar" onclick="addcar('Spyno Cheddar', 19.90)">+</button>
+
                     </div>
                              <div class="card card-menu">
                         <figure class="card-img" >
@@ -110,8 +119,10 @@
                             Pão de brioche, hambúrguer suculento e gourmet, queijo cheddar em dose dupla da melhor qualidade, alface americana e maionese japonesa direto do japão.
                         </p>
                         <span class="price">R$ 34,90</span>
+                        <button class="addcar" onclick="addcar('Spyno Cheddar Duplo', 34.90)">+</button>
+
                     </div>
-                                        <div class="card card-menu">
+                        <div class="card card-menu">
                         <figure class="card-img">
                             <img src="../images/Spymash.jpg" alt="imagem do item do cardápio">
                         </figure>
@@ -121,6 +132,8 @@
                             Pão de brioche, hambúrguer smash, queijo cheddar, cebola caramelizada, alface americana e maionese especial da casa.
                         </p>
                         <span class="price">R$  13,65</span>
+                        <button class="addcar" onclick="addcar('SpyMash', 13.65)">+</button>
+
                     </div>
                     <div class="card card-menu">
                         <figure class="card-img">
@@ -132,6 +145,8 @@
                             Pão de brioche, hambúrguer suculento, queijo cheddar, crocantes fatias de bacon, alface fresca e maionese defumada da casa.
                         </p>
                         <span class="price">R$ 28,93</span>
+                        <button class="addcar" onclick="addcar('SpyBacon', 28.93)">+</button>
+
                     </div>
                     <div class="card card-menu">
                         <figure class="card-img" >
@@ -143,8 +158,10 @@
                             Pão de brioche, hambúrguer suculento e gourmet, queijo cheddar da melhor qualidade, alface fresca e maionese verde da casa.
                         </p>
                         <span class="price">R$ 19,90</span>
+                        <button class="addcar" onclick="addcar('Spyno Cheddar', 19.90)">+</button>
+
                     </div>
-                             <div class="card card-menu">
+                        <div class="card card-menu">
                         <figure class="card-img" >
                             <img src="../images/SpynoCheddar.jpg" alt="imagem do item do cardápio">
                         </figure>
@@ -154,6 +171,8 @@
                             Pão de brioche, hambúrguer suculento e gourmet, queijo cheddar em dose dupla da melhor qualidade, alface americana e maionese japonesa direto do japão.
                         </p>
                         <span class="price">R$ 34,90</span>
+                        <button class="addcar" onclick="addcar('Spyno Cheddar Duplo', 34.90)">+</button>
+
                     </div>
                 </div>
 
@@ -174,8 +193,9 @@
            </p> 
       </div>
     </footer>
-       <script src="../js/menu.js"></script>
-    <script src="../js/load.js"></script>
+        <script src="../js/menu.js"></script>
+        <script src="../js/load.js"></script>
+        <script src="../js/carrinho.js"></script>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>

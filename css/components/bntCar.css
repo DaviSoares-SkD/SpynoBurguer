@@ -1,0 +1,13 @@
+.addcar{
+    border-radius: 15px;
+    font-size: 1.2rem;
+    background-color: var(--cta);
+    color: var(--text-day);
+    border: none;
+    display: inline;
+}
+
+.addcar:hover{
+    background-color: var(--accent);
+    color: var(--text);
+}
