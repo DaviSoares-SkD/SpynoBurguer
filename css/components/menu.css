@@ -72,7 +72,10 @@
 #carrinho{
     padding-left: 20px;
     font-size: 1.6rem;
+    transition: 0.5s ease-in-out;
 }
+#carrinho:hover{
+    transform: scale(1.1);}
 
 /* =========================
    MENU MOBILE
