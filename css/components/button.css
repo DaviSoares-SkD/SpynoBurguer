@@ -1,27 +1,60 @@
-/* Botão de chamada pra ação (CTA) */
-.callToAction {
-    padding: 7px 15px; /* espaço interno do botão */
-    margin-top: 20px;  /* separação do elemento acima */
+/* ==================================================
+   CTA BUTTON
+================================================== */
 
-    font-size: 1.2em; /* tamanho do texto */
-    font-family: 'Poppins', sans-serif;
+.callToAction {
+    margin-top: 20px;
+    padding: 7px 15px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
     font-weight: 300;
 
-    color: var(--text-day);        /* cor do texto (branco) */
-    background-color: var(--cta);  /* cor principal do botão */
+    color: var(--text-day);
+    background-color: var(--cta);
 
     border: none;
-    border-radius: 30px; /* deixa o botão bem arredondado (pill button) */
+    border-radius: 30px;
 
-    animation: cascade 1s ease-in-out; /* entra com animação suave */
+    cursor: pointer;
 
-    cursor: pointer; /* muda o mouse pra indicar clique */
-
-    transition: .3s ease-in-out; /* suaviza hover e mudanças de estilo */
+    animation: cascade 1s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
+
 /* Estado ao passar o mouse */
+
 .callToAction:hover {
-    background-color: var(--accent); /* muda cor do fundo */
-    color: var(--text);              /* muda cor do texto */
+    color: var(--text);
+    background-color: var(--accent);
+}
+
+
+/* ==================================================
+   ICONS
+================================================== */
+
+
+/* WhatsApp */
+
+.bi-whatsapp {
+    font-size: 1.8rem;
+    color: #6de26d;
+}
+
+
+/* Carrinho */
+
+.bi-cart-fill {
+    font-size: 1.8rem;
+    color: #b42640;
+}
+
+.addcar{
+    display: inline;
+    color: var(--cta);
+    font-size: 1.6rem;
+    border: none;
+    text-align: end;
 }

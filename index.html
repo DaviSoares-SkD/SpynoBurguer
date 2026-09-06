@@ -26,21 +26,15 @@
 
     <!-- CSS modular do projeto -->
     <link rel="stylesheet" href="css/conf.css">
-    <link rel="stylesheet" href="css/components/bg.css">
     <link rel="stylesheet" href="css/components/animations.css">
+    <link rel="stylesheet" href="css/layout/base.css">
     <link rel="stylesheet" href="css/layout/index.css">
-    <link rel="stylesheet" href="css/components/header.css">
-    <link rel="stylesheet" href="css/components/main.css">
-    <link rel="stylesheet" href="css/components/footer.css">
-    <link rel="stylesheet" href="css/components/logo.css">
     <link rel="stylesheet" href="css/components/menu.css">
     <link rel="stylesheet" href="css/components/button.css">
-    <link rel="stylesheet" href="css/components/zap.css">
     <link rel="stylesheet" href="css/components/card.css">
-    <link rel="stylesheet" href="css/components/text.css">
 </head>
 
-<body class="bg">
+<body>
 
     <!-- ================= HEADER ================= -->
     <header class="header">
@@ -62,16 +56,15 @@
             <!-- Lista de navegação -->
             <ul id="menu-list">
 
-                <li><a href="../../SpynoBurguer/index.html">Home</a></li>
-                <li><a href="../../SpynoBurguer/html/menu.html">Cardápio</a></li>
-                <li><a href="../../SpynoBurguer/html/aboutUs.html">Sobre nós</a></li>
-                <li><a href="https://wa.me/5511999999999" target="_blank" class="whatsapp-btn">
+                <li><a href="html/menu.html">Cardápio</a></li>
+                <li><a href="html/aboutUs.html">Sobre nós</a></li>
+                <li><a href="https://wa.me/5511999999999" target="_blank" id="zap-btn">
                     <i class="bi bi-whatsapp"></i>
                 </a></li>  
             </ul>
           
              <span id="carrinho">
-                <a href="../SpynoBurguer/html/carrinho.html">&#x1F6D2;</a>
+                <a href="html/carrinho.html"><i class="bi bi-cart-fill"></i></a>
             </span>
         </nav>
     </header>
@@ -87,7 +80,7 @@
             </h1>
 
             <h2 class="subtitle" id="subtitleCta">
-                Escolha agora: qual Spyno vai ganhar você hoje? &#x1F354;&#x1F525;
+                qual Spyno vai ganhar você hoje? &#x1F354;&#x1F525;
             </h2>
 
             <button class="callToAction">
@@ -97,12 +90,12 @@
         </section>
 
         <!-- CARDÁPIO / DESTAQUES -->
-        <section class="stars">
+        <section class="sections-of-home">
 
             <div class="container ">
 
-                <h2 class="subtitle " id="subtitleStars">
-                    Peça as Estrelas do sabor!  &#x1F354;&#x1F35F;
+                <h2 class="subs-secs-home">
+                    Estrelas do sabor!  &#x1F354;&#x1F35F;
                 </h2>
 
                 <div class="cards-container">
@@ -112,11 +105,8 @@
                         </figure>
                         <h3 class="card-title">Spymash</h3>
                         <p class="card-description">
-                            Um Lanche delicioso e cheio de sabor. <br>
-                            Pão de brioche, hambúrguer smash, queijo cheddar, cebola caramelizada, alface americana e maionese especial da casa.
-                            <br>
+                         O sabor que conquista logo na primeira mordida. Uma combinação irresistível, preparada do nosso jeito para transformar o clássico em uma experiência única.
                         </p>
-                        <span class="price">R$ 13,65</span>
 
                     </div>
                     <div class="card item">
@@ -125,10 +115,8 @@
                         </figure>
                         <h3 class="card-title">SpyBacon</h3>
                         <p class="card-description">
-                            O clássico bacon que todo mundo ama, agora com o toque especial do Spyno! <br>
-                            Pão de brioche, hambúrguer suculento, queijo cheddar, crocantes fatias de bacon, alface fresca e maionese defumada da casa. <br>
+                          O clássico que ganhou uma nova personalidade. Muito sabor, textura e aquele toque especial do Spyno que faz você querer mais. <br>
                         </p>
-                        <span class="price">R$ 28,93</span>
 
                     </div>
                     <div class="card item  ">
@@ -137,10 +125,8 @@
                         </figure>
                         <h3 class="card-title">Spyno Cheddar</h3>
                         <p class="card-description">
-                            O cheddar  cremoso que todo mundo ama, agora com o toque especial do Spyno! <br>
-                            Pão de brioche, hambúrguer suculento e gourmet, queijo cheddar da melhor qualidade, alface fresca e maionese verde da casa.<br>
+                           Cremoso, marcante e simplesmente irresistível. Uma combinação feita para os apaixonados por cheddar e para quem busca uma explosão de sabor a cada mordida.
                         </p>
-                        <span class="price">R$ 19,90</span>
                     </div>
                 </div>
 
@@ -148,24 +134,22 @@
         </section>
 
         <!-- SOBRE -->
-        <section class="about-us ">
+        <section class="sections-of-home" >
+        <h2 class="subs-secs-home">Sobre nós</h2>
 
-            <h2 class="subtitle" id="subtitleAbout">Sobre nós</h2>
+          <div id="about-sec">
+                <p class="paragraph" id="about-p">
+                 No Spyno Burguer, acreditamos que um hambúrguer vai muito além da fome. Criamos experiências com ingredientes de qualidade, preparo artesanal e combinações cuidadosamente pensadas para surpreender a cada mordida. Cada detalhe é feito com dedicação para entregar um sabor marcante, do primeiro ao último pedaço.
+                   <br>
+                <strong>qualidade e paixão em cada detalhe.&#x1F354;</strong>
+                </p>
+                <img src="images/foto-para-about-us.jpg" alt="hamburguer">
+          </div>
 
-            <p class="paragraph">
-                Uma história de paixão por hambúrgueres artesanais, qualidade e inovação. O Spyno Burguer nasceu da vontade de criar uma experiência gastronômica única, onde cada mordida é uma explosão de sabor e satisfação. Desde o início, nossa missão tem sido oferecer hambúrgueres que não apenas saciem a fome, mas também encantem os paladares mais exigentes.
-            </p>
+        </section>
 
-            <p class="paragraph">
-                Com uma equipe dedicada de chefs e amantes de hambúrgueres, o Spyno Burguer se destaca por sua abordagem artesanal e ingredientes de alta qualidade. Cada hambúrguer é cuidadosamente preparado, utilizando técnicas de cozinha inovadoras para garantir suculência, sabor e uma apresentação irresistível. Nossa paixão por criar combinações únicas de sabores nos levou a desenvolver um cardápio diversificado, que inclui desde os clássicos até criações exclusivas que surpreendem a cada mordida.
-            </p>
-
-            <img src="images/foto-para-about-us.jpg" alt="imagem">
-
-            <p class="paragraph">
-                O Spyno Burguer não é apenas um lugar para comer, mas uma experiência completa. Desde o atendimento acolhedor até a atmosfera descontraída, buscamos criar um ambiente onde nossos clientes se sintam em casa. Acreditamos que um bom hambúrguer é mais do que apenas comida - é uma forma de arte culinária que merece ser apreciada e compartilhada. Venha fazer parte da nossa história e descubra o sabor que conquistou tantos corações!
-            </p>
-
+            
+            
 
 
     </main>
@@ -173,16 +157,15 @@
     <!-- ================= FOOTER ================= -->
     <footer class="footer">
         <p>Spyno Burguer™ . Todos os direitos reservados © 2026</p>
-        <br>
       <div class="contact-info">
           
             <p class="contact">Contato: <a href="mailto:contato@spynoburguer.com">contato@spynoburguer.com</a></p>
             <p class="address"><a href="https://www.google.com/maps" target="_blank" rel="external">Endereço: Rua dos Burgers, 123 - Cidade do Sabor</a></p>   
                 <p class="social">
                 Siga-nos:
-                <a href="https://www.facebook.com/spynoburguer" target="_blank">Facebook</a> |
-                <a href="https://www.instagram.com/spynoburguer" target="_blank">Instagram</a> |
-                <a href="https://www.twitter.com/spynoburguer" target="_blank">Twitter</a>
+                <a href="https://www.facebook.com/spynoburguer" target="_blank"><i class="bi bi-facebook"></i></a> |
+                <a href="https://www.instagram.com/spynoburguer" target="_blank"><i class="bi bi-instagram"></i></a> |
+                <a href="https://www.twitter.com/spynoburguer" target="_blank"><i class="bi bi-twitter"></i></a>
             </p>
       </div>
     </footer>

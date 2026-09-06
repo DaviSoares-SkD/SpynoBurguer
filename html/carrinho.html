@@ -26,18 +26,12 @@
 
     <!-- CSS modular do projeto -->
     <link rel="stylesheet" href="../css/conf.css">
-    <link rel="stylesheet" href="../css/components/bg.css">
     <link rel="stylesheet" href="../css/components/animations.css">
+    <link rel="stylesheet" href="../css/layout/base.css">
     <link rel="stylesheet" href="../css/layout/carrinho.css">
-    <link rel="stylesheet" href="../css/components/header.css">
-    <link rel="stylesheet" href="../css/components/main.css">
-    <link rel="stylesheet" href="../css/components/footer.css">
-    <link rel="stylesheet" href="../css/components/logo.css">
     <link rel="stylesheet" href="../css/components/menu.css">
     <link rel="stylesheet" href="../css/components/button.css">
-    <link rel="stylesheet" href="../css/components/zap.css">
     <link rel="stylesheet" href="../css/components/card.css">
-    <link rel="stylesheet" href="../css/components/text.css">
 </head>
 
 <body class="bg">
@@ -62,17 +56,14 @@
             <!-- Lista de navegação -->
             <ul id="menu-list">
 
-                <li><a href="../../SpynoBurguer/index.html">Home</a></li>
-                <li><a href="../../SpynoBurguer/html/menu.html">Cardápio</a></li>
-                <li><a href="../../SpynoBurguer/html/aboutUs.html">Sobre nós</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="menu.html">Cardápio</a></li>
+                <li><a href="aboutUs.html">Sobre nós</a></li>
                 <li><a href="https://wa.me/5511999999999" target="_blank" class="whatsapp-btn">
                     <i class="bi bi-whatsapp"></i>
                 </a></li>  
             </ul>
           
-             <span id="carrinho">
-                <a href="../../SpynoBurguer/html/carrinho.html">&#x1F6D2;</a>
-            </span>
         </nav>
     </header>
 
@@ -80,8 +71,7 @@
    <main class="main">
     <section class="cart-section">
 
-        <h1 class="cart-title">🛒 Meu Carrinho</h1>
-
+        <span><i class="bi bi-cart-fill" id="carinho">Meu Carinho</i></span>
         <div id="listaCarrinho" class="cart-list">
             <!-- Os produtos serão adicionados aqui pelo JavaScript -->
         </div>
@@ -102,17 +92,16 @@
     <!-- ================= FOOTER ================= -->
     <footer class="footer">
         <p>Spyno Burguer™ . Todos os direitos reservados © 2026</p>
-        <br>
       <div class="contact-info">
           
             <p class="contact">Contato: <a href="mailto:contato@spynoburguer.com">contato@spynoburguer.com</a></p>
             <p class="address"><a href="https://www.google.com/maps" target="_blank" rel="external">Endereço: Rua dos Burgers, 123 - Cidade do Sabor</a></p>   
-                <p class="social">
-                Siga-nos:
-                <a href="https://www.facebook.com/spynoburguer" target="_blank">Facebook</a> |
-                <a href="https://www.instagram.com/spynoburguer" target="_blank">Instagram</a> |
-                <a href="https://www.twitter.com/spynoburguer" target="_blank">Twitter</a>
-            </p>
+         <p class="social">
+            Siga-nos:
+        <a href="https://www.facebook.com/spynoburguer" target="_blank"><i class="bi bi-facebook"></i></a>|
+        <a href="https://www.instagram.com/spynoburguer" target="_blank"><i class="bi bi-instagram"></i></a> |
+        <a href="https://www.twitter.com/spynoburguer" target="_blank"><i class="bi bi-twitter"></i></a>
+        </p>
       </div>
     </footer>
 

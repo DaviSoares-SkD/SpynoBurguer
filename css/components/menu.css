@@ -1,60 +1,69 @@
-
-/* =========================
+/* ==================================================
    MENU DESKTOP
-========================= */
+================================================== */
 
 .menu {
+    position: relative;
+
     display: flex;
-    justify-content: flex-end; /* joga o menu pro lado direito */
     align-items: center;
+    justify-content: flex-end;
 
     width: 100%;
-    
     padding: 10px 20px;
     margin-top: 15px;
-
-    position: relative; /* base pro dropdown mobile */
 }
 
-/* UL do menu */
+
+/* ==================================================
+   LISTA DO MENU
+================================================== */
+
 .menu ul {
     display: flex;
     align-items: center;
-    gap: 20px; /* espaçamento entre links */
+
+    gap: 20px;
 
     margin: 0;
     padding: 0;
 }
 
-/* Remove bullets da lista */
 .menu ul li {
     list-style: none;
 }
 
-/* Links */
+
+/* ==================================================
+   LINKS
+================================================== */
+
 .menu ul li a {
-    text-decoration: none;
+    font-family: "Syne", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
 
     color: var(--text-additional);
-
-    font-size: 18px;
-    font-family: 'Syne', sans-serif;
-    font-weight: 600;
+    text-decoration: none;
 
     animation: fadeIn 0.5s ease;
     transition: opacity 0.3s ease;
 }
 
-/* Hover simples (leve e clean) */
 .menu ul li a:hover {
     opacity: 0.7;
 }
 
-/* Ícone hamburguer (desktop escondido) */
+
+/* ==================================================
+   ÍCONE HAMBURGUER
+================================================== */
+
 .material-symbols-outlined {
     display: none;
 
     font-size: 32px;
+
     color: var(--text-additional);
 
     cursor: pointer;
@@ -66,55 +75,56 @@
     opacity: 0.7;
 }
 
-#zapContainer{
-    padding-left: 20px;
-}
-#carrinho{
-    padding-left: 20px;
-    font-size: 1.6rem;
-    transition: 0.5s ease-in-out;
-}
-#carrinho:hover{
-    transform: scale(1.1);}
 
-/* =========================
+/* ==================================================
+   ÍCONES — WHATSAPP E CARRINHO
+================================================== */
+
+#carrinho {
+    margin-left: 15px;
+}
+
+
+/* ==================================================
    MENU MOBILE
-========================= */
+================================================== */
 
 @media (max-width: 768px) {
 
-    /* mostra hamburguer */
+    /* Ícone hamburguer */
+
     .material-symbols-outlined {
         display: block;
     }
 
-    /* links mobile */
+
+    /* Links */
+
     .menu ul li a {
+        font-family: "Syne", sans-serif;
         font-size: 1.3rem;
         font-weight: 700;
+
         color: var(--text-additional);
-
-        font-family: 'Syne', sans-serif;
-
-        text-align: flex-start; /* ⚠️ isso aqui não existe */
     }
 
-    /* dropdown */
+
+    /* Dropdown */
+
     .menu ul {
+        position: absolute;
+        top: 72px;
+        right: -20px;
+        z-index: 1;
+
         display: flex;
         flex-direction: column;
 
-        align-items: left; /* ⚠️ isso também é inválido */
-        z-index: 1;
         gap: 15px;
 
-        position: absolute;
-
         padding: 15px 20px;
-        border-radius: 8px;
 
-        top: 72px;
-        right: -20px;
+        border-radius: 8px;
 
         background-color: var(--base);
 
@@ -123,12 +133,15 @@
 
         transform: translateY(-10px);
 
-        transition: opacity 0.4s ease,
-                    transform 0.4s ease,
-                    visibility 0.4s;
+        transition:
+            opacity 0.4s ease,
+            transform 0.4s ease,
+            visibility 0.4s;
     }
 
-    /* menu aberto */
+
+    /* Menu aberto */
+
     .menu ul.active {
         opacity: 1;
         visibility: visible;
@@ -136,12 +149,13 @@
         transform: translateY(0);
     }
 
-    /* setinha do dropdown */
+
+    /* Seta do dropdown */
+
     .menu ul::before {
         content: "";
 
         position: absolute;
-
         top: -9px;
         right: 31px;
 
@@ -149,12 +163,12 @@
         border-right: 8px solid transparent;
         border-bottom: 10px solid var(--base);
     }
-    #zapContainer{
-    padding-left: 20px;
-    margin-right: -20px;
-}
-    #carrinho{
-        margin-left: 0px;
-    }
 
+
+    /* WhatsApp */
+
+    #zapContainer {
+        padding-left: 20px;
+        margin-right: -20px;
+    }
 }

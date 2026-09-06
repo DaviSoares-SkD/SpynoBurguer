@@ -1,141 +1,151 @@
-
-
-/* ===== HERO SECTION ===== */
+/* ==================================================
+   HERO SECTION
+================================================== */
 
 .starter {
     position: relative;
     overflow: hidden;
 
-    min-width: 100%;
+    width: 100%;
+    min-height: 87.3vh;
     padding-top: 40px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    min-height: 87.3vh; /* quase tela cheia */
 }
 
-/* Fundo do hero com imagem + overlay + blur */
+
+/* Fundo do hero: imagem + overlay + blur */
+
 .starter::before {
     content: "";
 
     position: absolute;
     inset: 0;
 
-    /* camada escura + imagem */
-    background-image:     
-      linear-gradient(
-            rgba(0,0,0,.35),
-            rgba(0,0,0,.35)
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.35)
         ),
-        url('../../images/burguer-bg.jpg');
+        url("../../images/burguer-bg.jpg");
 
     background-size: cover;
     background-position: center;
 
-    filter: blur(8px); /* efeito cinematográfico */
-    transform: scale(1.1); /* evita bordas aparecendo no blur */
+    filter: blur(8px);
+    transform: scale(1.1);
 
-    z-index: -1; /* joga para trás do conteúdo */
+    z-index: -1;
 }
 
-/* ===== CTA HERO TITLE ===== */
+
+/* ==================================================
+   HERO CTA
+================================================== */
 
 #titleCta {
-    font-size:clamp(2.8rem, 5vw, 3.5rem);
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(2.8rem, 5vw, 3.5rem);
     font-weight: 700;
-
-    text-shadow: 0px 1px 1px var(--shadows);
 
     color: var(--accent);
+    text-shadow: 0 1px 1px var(--shadows);
 }
 
-/* Subtítulo do CTA */
-#subtitleCta {
-    font-weight: 500;
-    font-family: 'Syne', sans-serif;
-    font-size: clamp(1.8rem, 4vw, 2.5rem);
 
-    text-shadow: 0px 1px 2px var(--shadows);
+#subtitleCta {
+    font-family: "Syne", sans-serif;
+    font-size: clamp(1.5rem, 1.5vw, 1.9rem);
+    font-weight: 500;
 
     color: var(--text-day);
+    text-shadow: 0 1px 2px var(--shadows);
 }
 
-/* ===== STARS SECTION ===== */
 
-.stars {
+/* ==================================================
+   LINKS
+================================================== */
+
+a {
+    color: var(--text-day);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--text);
+}
+
+
+/* ==================================================
+   HOME SECTIONS
+================================================== */
+
+.sections-of-home {
     width: 100%;
+    margin-top: 5%;
+    padding: 20px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    margin-top: 5%;
-    padding: 20px;
 }
 
-/* Subtítulo específico da seção stars */
-.subtitle#subtitleStars {
-    font-size: clamp(1.5rem, 4vw, 2.5rem)   ;
-    font-family: 'Poppins', sans-serif;
+
+/* Títulos das seções */
+
+.subs-secs-home {
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(1.4rem, 3.2vw, 2.2rem);
     font-weight: 700;
-
-    text-shadow: 0px 1px 1px var(--shadows);
-
-    color: var(--cta);
-}
-
-
-
-.about-us{
-    width: 100%;
-    padding: 20px;
-    margin-top: 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#subtitleAbout {
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-
-    text-shadow: 0px 1px 1px var(--shadows);
-
-    color: var(--cta);
-}
-.paragraph {
-    max-width: 600px; /* evita linha muito longa (boa prática UX) */
-    padding: 10px;
-    line-height: 1.5; /* melhora leitura */
-
-    font-family: Helvetica, sans-serif;
-    font-size: clamp(1rem, 4vw, 1.25rem);
     text-align: center;
-    background: rgba(255, 255, 255, 0.8); /* leve fundo para destacar o texto */
-    border-radius: 8px; /* cantos arredondados para suavizar */ 
 
-    animation: cascade 1s ease-in-out;
+    color: var(--cta);
+    text-shadow: 0 1px 1px var(--shadows);
 }
 
-.about-us img {
+
+/* Imagens gerais das seções */
+
+.sections-of-home img {
     width: 100%;
     max-width: 600px;
-    margin: 20px 0;
-    border-radius: 8px; /* cantos arredondados para suavizar */
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.2); /* leve sombra para destacar a imagem */
+
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-a{
-    text-decoration: none;
-    color: var(--text-day);
+
+/* ==================================================
+   ABOUT SECTION
+================================================== */
+
+#about-sec {
+    margin-top: 2%;
+
+    display: flex;
+    flex-direction: row;
+
+    font-size: 1.2rem;
 }
-a:hover{
-    color: var(--text);
+
+
+#about-sec img {
+    width: 50%;
+    max-width: 400px;
+
+    border: 2px solid var(--accent);
+    border-radius: 8px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+#about-p {
+    width: 500px;
+    text-align: left;
 }

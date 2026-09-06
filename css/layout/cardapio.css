@@ -1,9 +1,3 @@
-#title-menu{
-    margin-top: 20px;
-    animation: slideIn 1s ease-in-out;
-    margin-left: 2%;
-    color:var(--text-additional);
-}
 #subtitle-menu{
     margin-top: 3%;
     padding-left: 5%;
@@ -24,11 +18,4 @@
     align-items: flex-start;
     /* Controla o espaço exato entre o título e a lista */
     gap: 14px; 
-}
-
-
-@media (max-width: 768px) {
-    #title-menu{
-        font-size: 2.2rem ;
-    }
 }

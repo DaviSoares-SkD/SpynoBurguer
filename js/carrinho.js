@@ -101,7 +101,7 @@ function mostrarCarrinho(){
         <button class="btn-plus" onclick="aumentar('${item.nome}')">+</button>
 
         <button class="btn-delete" onclick="remover('${item.nome}')">
-            🗑️
+            <i class="bi-trash-fill"></i>
         </button>
 
     </div>
@@ -129,7 +129,7 @@ function finalizarPedido() {
         return;
     }
 
-    let mensagem = "🛒 *Pedido do Carrinho:*\n\n";
+    let mensagem = " *Pedido do Carrinho:*\n\n";
     let total = 0;
 
     carrinho.forEach(item => {
