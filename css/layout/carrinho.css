@@ -176,7 +176,7 @@
 }
 
 #carinho{
-    font-size: 3rem;
+    font-size: clamp(2.1rem, 3vw, 3rem);
     align-items: center;
     font-family: "Montserrat";
 }
@@ -245,6 +245,6 @@
         margin-left: 0;
         padding: 14px;
 
-        font-size: 1.5rem;
+        font-size: 0.8rem;
     }
 }

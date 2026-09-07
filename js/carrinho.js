@@ -26,6 +26,7 @@ function addcar(nome, preco) {
 
     salvarCarrinho();
     mostrarCarrinho();
+    alert(`${nome} foi adicionado ao carrinho!`);
 }
 
 // Aumentar quantidade

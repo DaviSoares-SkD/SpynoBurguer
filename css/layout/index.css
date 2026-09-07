@@ -149,3 +149,34 @@ a:hover {
     width: 500px;
     text-align: left;
 }
+
+/* === about cell ===*/ 
+
+@media   (max-width: 768px) {
+
+    #about-sec {
+    margin-top: 2%;
+
+    display: flex;
+    flex-direction: column;
+        align-items: center;
+    font-size: 1.1rem;
+}
+
+
+#about-sec img {
+    width: 80%;
+    max-width: 800px;
+
+    border: 2px solid var(--accent);
+    border-radius: 8px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+#about-p {
+    width: 380px;
+    text-align: center;
+}
+}
