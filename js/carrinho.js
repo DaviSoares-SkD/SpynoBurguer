@@ -11,7 +11,7 @@ function salvarCarrinho() {
 
 // Adicionar produto
 function addcar(nome, preco) {
-
+    const popup = document.getElementById("popup");
     const item = carrinho.find(produto => produto.nome === nome);
 
     if (item) {
@@ -26,7 +26,13 @@ function addcar(nome, preco) {
 
     salvarCarrinho();
     mostrarCarrinho();
-    alert(`${nome} foi adicionado ao carrinho!`);
+
+    popup.textContent = `${nome} foi adicionado ao carrinho! ✅`;
+    popup.classList.add("mostrar");
+
+    setTimeout(() => {
+        popup.classList.remove("mostrar");
+    }, 3000);
 }
 
 // Aumentar quantidade

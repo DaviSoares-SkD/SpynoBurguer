@@ -19,3 +19,25 @@
     /* Controla o espaço exato entre o título e a lista */
     gap: 14px; 
 }
+#popup {
+    position: fixed;
+
+    top: 20px;
+    right: 20px;
+
+    padding: 15px 20px;
+    background: var(--accent);
+    color: var(--text);
+    border-radius: 10px;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    z-index: 9999;
+
+    pointer-events: none;
+}
+
+#popup.mostrar {
+    opacity: 1;
+}
