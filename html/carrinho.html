@@ -79,12 +79,31 @@
         </div>
 
         <div class="cart-footer">
+            <label for="obs">Observações:</label>
+            <textarea name="obs" id="obs" placeholder="Ex: sem cebola, Pouco molho..."></textarea>
+            <br>
+            
+            <h2 id="info-pedido">Informações do pedido &#x1F4DD;</h2>
+            <br>
+            <label for="nome">Nome:</label>
 
+            <input type="text" name="nome" id="nome" class="text" required>
+            <br>
+            <label for="pag">Forma de Pagamento:</label>
+            <select name="pag" id="pag" required>
+                <option value="" disabled selected>Selecione uma Opção:</option>
+                <option value="debito">Débito</option>
+                <option value="credito">Crédito</option>
+                <option value="pix">Pix</option>
+            </select>
+            <br>
             <h2 id="total">Total: R$ 0,00</h2>
             <br>
+
             <button id="finalizar" class="finish-btn" onclick="finalizarPedido()">
                 Finalizar Pedido
             </button>
+            <span id="popup"></span>
 
         </div>
 
