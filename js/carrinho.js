@@ -80,6 +80,15 @@ function mostrarCarrinho(){
 
     const lista = document.getElementById("listaCarrinho");
     const total = document.getElementById("total");
+    const avisoVazio = document.getElementById("vazio")
+
+    if (carrinho.length ===0){
+        avisoVazio.innerHTML = `Seu Carrinho está vazio <br> 
+            <button class="callToAction">
+                <a href="menu.html">Fazer meu pedido &#x1F35F;</a>
+            </button>`
+
+    }
 
     if(!lista || !total) return;
 

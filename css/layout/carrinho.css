@@ -248,3 +248,41 @@
         font-size: 0.8rem;
     }
 }
+
+
+
+
+
+
+/* === links === */
+
+a {
+    text-align: center;
+    color: var(--text-day);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--text);
+}
+
+
+
+#vazio{
+    display: flex;
+    flex-direction: column;
+    animation: cascade 0.9s ease-in-out;
+    align-items: center;
+}
+
+#carrinho-title{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#carrinho{
+    text-align: center;
+    margin-right:6%;
+    font-family: "Syne";
+    font-size: 2.4rem;
+}
